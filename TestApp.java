@@ -43,11 +43,11 @@ class TestApp
 			System.out.println("EmployeeId \tEmployeeNumber	\tEmailId \t\t\tPassword ");
 			while(resultSet.next()){
 				Integer eId			= resultSet.getInt(1);
-				String eName		= resultSet.getString(2);
+				String eNumber		= resultSet.getString(2);
 				String eEmail		= resultSet.getString(3);
 				String ePassword	= resultSet.getString(4);
 
-				System.out.println(eId + "\t\t" + eName + "\t\t\t" + eEmail + "\t"+ ePassword );
+				System.out.println(eId + "\t\t" + eNumber + "\t\t\t" + eEmail + "\t"+ ePassword );
 			}
 
 		}catch (ClassNotFoundException ce){
