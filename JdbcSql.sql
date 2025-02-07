@@ -1,0 +1,28 @@
+CREATE DATABASE IF NOT EXISTS JDBC;
+USE JDBC;
+
+CREATE TABLE users(
+uId INT PRIMARY KEY AUTO_INCREMENT,
+uName VARCHAR(45),
+uDob DATE
+);
+
+SELECT * FROM users;
+
+insert into users(uId, uName,uDob) values (101, 'Pavan', '2001-06-15');
+
+
+CREATE TABLE userImage(
+uId INT PRIMARY KEY AUTO_INCREMENT,
+uName VARCHAR(45),
+uImage LONGBLOB
+);
+
+SELECT * FROM userImage;
+
+
+
+
+
+
+
